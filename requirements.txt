@@ -1,0 +1,30 @@
+# Core ML libraries
+# Install with: pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+# Note: Using cu121 builds for compatibility with CUDA driver 12.0.90
+# PyTorch 2.5.1 is the latest version compatible with CUDA 12.0/12.1 drivers
+torch==2.5.1
+torchvision==0.20.1
+transformers==4.57.2
+accelerate==1.12.0
+
+# Dataset and evaluation
+datasets>=2.16.0,<4.0  # lm-eval 0.4.9.1 requires datasets<4.0
+lm_eval==0.4.9.1
+evaluate==0.4.6
+
+# Model adaptation
+peft==0.18.0
+
+# Scientific computing
+numpy>=2.3.5
+scipy==1.16.3
+scikit-learn==1.7.2
+
+# Other dependencies from original requirements
+antlr4-python3-runtime==4.11
+math_verify
+sympy
+hf_xet
+
+# Note: Compatible with Python 3.12 (tested with Python 3.12.12)
+# lm-eval 0.4.9.1 requires Python >=3.9 and datasets<4.0

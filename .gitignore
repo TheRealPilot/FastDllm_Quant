@@ -1,0 +1,19 @@
+.vscode/
+__pycache__/
+*.py[cod]
+*$py.class
+llada/output/
+llada/evals_results/
+dream/evals_results/
+.DS_Store
+**/.DS_Store
+.claude/
+
+# Virtual environment
+fastdllm/
+bin/
+lib/
+lib64
+include/
+pyvenv.cfg
+fast_dllm.egg-info/
